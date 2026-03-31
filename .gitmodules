@@ -1,3 +1,6 @@
 [submodule "lessons-and-assignments"]
 	path = lessons-and-assignments
 	url = https://github.com/mnichols08/ctd-node-essentials
+[submodule "homework"]
+	path = homework
+	url = https://github.com/mnichols08/ctd-manatee-homework.git
