@@ -4,3 +4,6 @@
 [submodule "homework"]
 	path = homework
 	url = https://github.com/mnichols08/ctd-manatee-homework.git
+[submodule "final-project"]
+	path = final-project
+	url = https://github.com/mnichols08/kitchen-inventory-app
