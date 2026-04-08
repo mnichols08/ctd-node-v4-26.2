@@ -14,6 +14,13 @@ Think of running JavaScript in a browser like driving this vehicle on a **public
 
 In Node.js, we can take the same car into our own **private garage**. Because we own the garage, we can ignore all of these rules. We can hook up directly to the house (the *server*) and gain **unmitigated access** to all of its otherwise hidden parts—like the storage or phone lines—allowing us to build some very powerful applications all while using the same **steering wheel / dashboard** we are familiar with using.
 
+```js
+console.log(__dirname);        // absolute path to this file's folder
+console.log(__filename);       // absolute path to this file
+console.log(process.platform); // 'darwin', 'win32', 'linux', etc.
+console.log(process.pid);      // the running process ID
+```
+
 ## What is the V8 Engine and how does Node use it?
 
 It is no surprise that Google decided to call their workhorse behind their browser an **Engine**. And it's only fitting for it to be called **V8** as well; it goes perfectly with this analogy. The V8 Engine is the actual **physical engine** under the hood that makes everything move and work together. Originally, it was built specifically for the road (*Google Chrome*) and intended to win races on the web. It is exceptional at turning **"gasoline"** (*JavaScript*) into **"mechanical energy"** (*machine code*) breathtakingly fast.
@@ -33,4 +40,16 @@ Since the engine is now a **high-speed generator** for our house, it excels at t
 We can think of these as the **blueprints** or **instruction manuals** for how we bolt new parts onto our engine. Even though the engine is the same, there are two different "standards" for how parts should connect.
 
 *   **CommonJS (The Classic Manual):** This is very much like the original, heavy-duty repair manual that comes with the car. It uses a very direct approach (*require*). It is reliable and has been used in garages for years, but it is a bit **old-school** and was designed specifically for our "private garage" (Node.js).
+
+```js
+const fs = require('fs');
+module.exports = { greet: () => console.log('Hello!') };
+```
+
+
 *   **ES Modules (The Modern Universal Blueprint):** This is the newer and sleeker set of instructions (*import/export*) that works for **both** cars on the road (the browser) and our engines in the house. It is like a **universal adapter kit**. While the "classic manual" is still found everywhere, the industry is moving towards these "universal blueprints" so that the same parts can be easily swapped between the road and the garage without needing a different toolkit.
+
+```js
+import fs from 'fs';
+export const greet = () => console.log('Hello!');
+```
