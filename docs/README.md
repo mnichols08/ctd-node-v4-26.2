@@ -1,11 +1,11 @@
-# Code the Dream 26.2 Manatee Cohort — Central Repository
+# Code the Dream Node 26.2 Cohort — Central Repository
 
 ![Program](https://img.shields.io/badge/Program-Code%20the%20Dream-blue)
-![Cohort](https://img.shields.io/badge/Cohort-26.2%20Manatee-green)
+![Cohort](https://img.shields.io/badge/Cohort-Node%2026.2-green)
 ![Purpose](https://img.shields.io/badge/Purpose-Repository%20Hub-lightgrey)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-This repository acts as a **central hub** for organizing and managing all work completed during my participation in the **Code the Dream (CTD) 26.2 Manatee Cohort**.
+This repository acts as a **central hub** for organizing and managing all work completed during my participation in the **Code the Dream (CTD) Node 26.2 Cohort**.
 
 Rather than containing development work directly, this repo provides a single access point to all cohort-related repositories through Git submodules.
 
